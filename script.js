@@ -101,9 +101,10 @@ function cerrarSesion() {
   opcionesDiv.style.display = "none";
   document.getElementById("inicio").style.display = "block";
   cuentaSeleccionada = undefined;
-  inputPassword = undefined;
+  inputPassword.value = "";
   resultadoDiv.innerHTML = "";
 }
+
 
 window.onload = function () {
   inputPassword = document.getElementById("password");
