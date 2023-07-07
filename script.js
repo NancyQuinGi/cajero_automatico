@@ -1,7 +1,7 @@
 const cuentas = [
-  { nombre: "Mali", saldo: 200, password: "pass1" },
-  { nombre: "Gera", saldo: 290, password: "pass2" },
-  { nombre: "Maui", saldo: 67, password: "pass3" }
+  { nombre: "Mali", saldo: 200, password: "1234" },
+  { nombre: "Gera", saldo: 290, password: "1234" },
+  { nombre: "Maui", saldo: 67, password: "1234" }
 ];
 
 let cuentaSeleccionada;
