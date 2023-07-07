@@ -1,0 +1,102 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.atm {
+  width: 600px;
+  background-color: #f5f5f5;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.atm h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.atm .form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.atm label {
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.atm .form-control {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.atm .btn-primary {
+  width: 32%;
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.atm .btn-secondary {
+  width: 32%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.atm .result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.atm .options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.atm .transaction {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.atm .button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.atm .transaction-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.atm .transaction-form .form-control {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.atm .transaction-form .button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-top: 10px;
+}
+
+.atm .transaction-form .btn-primary,
+.atm .transaction-form .btn-secondary {
+  width: 48%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

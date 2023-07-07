@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cajero Automático</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>  </header>
+  <main class="atm">
+    <h1>Cajero Automático</h1>
+    <div id="inicio" class="text-center">
+      <div class="form-group">
+        <label for="seleccion-cuenta" class="fw-semibold">Selecciona una cuenta:</label>
+        <select id="seleccion-cuenta" class="form-control text-center">
+          <option value="" disabled selected>Cuentas</option>
+          <option value="Mali">Mali</option>
+          <option value="Gera">Gera</option>
+          <option value="Maui">Maui</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="password">Ingresa la contraseña:</label>
+        <input type="password" id="password" class="form-control text-center">
+      </div>
+      <div class="button-group">
+        <button onclick="ingresar()" class="btn btn-primary btn-lg mt-3 d-block mx-auto">Ingresar</button>
+      </div>
+    </div>
+
+    <div id="opciones" style="display: none;">
+      <div class="options">
+        <h2>Opciones</h2>
+        <div class="transaction">
+          <div class="button-group">
+            <button onclick="mostrarFormularioDeposito()" class="btn btn-primary">Ingresar monto</button>
+            <button onclick="mostrarFormularioRetiro()" class="btn btn-primary">Retirar monto</button>
+            <button onclick="mostrarFormularioConsulta()" class="btn btn-primary">Consultar saldo</button>
+          </div>
+        </div>
+        <form id="formulario-transaccion" style="display: none;">
+          <h3>Realizar transacción</h3>
+          <div class="transaction-form">
+            <div class="form-group">
+              <input type="number" id="monto-transaccion" class="form-control" required>
+            </div>
+            <div class="transaction-form d-flex">
+              <div class=" ">
+                <button type="submit" class="btn border">Aceptar</button>
+                <button type="button" class="btn border" onclick="cancelarTransaccion()">Cancelar</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="result" id="resultado"></div>
+      <button onclick="cerrarSesion()" class="btn btn-secondary mt-3 d-block mx-auto">Cerrar sesión</button>
+    </div>
+  </main>
+ 
+<footer></footer>
+ <script src="script.js"></script>
+</body>
+
+</html>
